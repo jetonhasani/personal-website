@@ -7,7 +7,6 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-theme-ui"
+    "gatsby-plugin-react-helmet"
   ]
 };
