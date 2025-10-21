@@ -33,7 +33,7 @@ img{ max-width:100%; height:auto; display:block }
 .navbar{
   position:fixed; top:0; left:0; right:0; z-index:1000;
   display:flex; align-items:center; justify-content:space-between;
-  height:64px;
+  height:80px;
   padding:6px 20px;
   background:#0b1221;
   border-bottom:1px solid rgba(255,255,255,.06);
@@ -41,7 +41,7 @@ img{ max-width:100%; height:auto; display:block }
   padding-top: max(6px, env(safe-area-inset-top));
 }
 .brand{ display:flex; align-items:center }
-.nav-logo{ height:38px; width:auto; object-fit:contain; filter:drop-shadow(0 1px 1px rgba(255,255,255,.08)) }
+.nav-logo{ height:45px; width:auto; object-fit:contain; filter:drop-shadow(0 1px 1px rgba(255,255,255,.08)) }
 
 /* Links (desktop) */
 .nav-links{ display:flex; align-items:center; gap:20px }
