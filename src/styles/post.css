@@ -1,0 +1,101 @@
+/* --- post page layout --- */
+.post-wrap{ max-width:1100px; margin:0 auto; padding:64px 24px }
+.post-header h1{
+  margin:30px 0 8px;
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-weight:800;
+  font-size: clamp(34px, 5vw, 56px);
+  line-height:1.06;
+  color:#fff;
+}
+.post-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 0 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #a8b3c7;
+  font-size: 14px;
+}
+
+.post-meta {
+  color: #a8b3c7;
+}
+
+.post-tag[data-tag="Android"]  { background: #3ddc84; color: #001a0f; }  /* green */
+.post-tag[data-tag="Firebase"] { background: #ffa000; color: #2e1b00; }  /* yellow/orange */
+.post-tag[data-tag="Kotlin"]   { background: #7f52ff; color: #fff; }     /* purple */
+
+
+/* spacer takes remaining space to push tag right */
+.post-meta-spacer {
+  flex: 1;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end; /* pushes them to the right */
+}
+
+.post-tag {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  background: #2a3346;
+  color: #e7f0ff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.post-tag:hover {
+  background: #37425c;
+  transform: translateY(-1px);
+}
+
+.post-grid{
+  display:grid; gap:32px; grid-template-columns: 1fr 280px;
+  margin-top:28px;
+}
+@media (max-width: 960px){
+  .post-grid{ grid-template-columns: 1fr; }
+  .post-aside{ position: static; }
+}
+
+/* content */
+.post-content{
+  color:#dbe6ff;
+  line-height:1.8;
+}
+.post-content p{ margin: 0 0 18px; color:#c9d5ea }
+.post-content h2{
+  margin:36px 0 8px; font-size:24px; color:#ffffff; scroll-margin-top: 96px;
+  border-top:1px solid rgba(255,255,255,.06); padding-top:24px;
+}
+.post-content h3{
+  margin:28px 0 6px; font-size:18px; color:#e7efff; scroll-margin-top: 96px;
+}
+
+/* TOC */
+.post-aside{ position:sticky; top:96px; height:fit-content }
+.toc-title{
+  font-size:12px; letter-spacing:.12em; color:#9eb0c2; margin-bottom:8px;
+}
+.toc{
+  background:#101c2d; border:1px solid rgba(255,255,255,.08);
+  border-radius:12px; padding:14px 14px;
+}
+.toc-list{ list-style:none; margin:0; padding:0 }
+.toc-item{ margin:4px 0 }
+.toc-item.level-3{ margin-left:10px; }
+.toc-link{
+  color:#a9b6c8; text-decoration:none; font-size:14px; line-height:1.5;
+  border-left:2px solid transparent; padding-left:8px; display:block;
+}
+.toc-link:hover{ color:#cfe0ff }
+.toc-link.active{
+  color:#6ea8fe; border-left-color:#6ea8fe; font-weight:600;
+}
