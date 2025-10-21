@@ -6,7 +6,5 @@ module.exports = {
     title: `Jeton Hasani`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [
-    "gatsby-plugin-react-helmet"
-  ]
+  plugins: []
 };
