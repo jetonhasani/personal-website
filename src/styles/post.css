@@ -99,3 +99,11 @@
 .toc-link.active{
   color:#6ea8fe; border-left-color:#6ea8fe; font-weight:600;
 }
+
+.post-content h2, .post-content h3 { scroll-margin-top: 96px; }
+
+/* Slightly larger body text on narrow screens */
+@media (max-width: 520px){
+  .post-wrap{ padding:56px 16px }
+  .post-content{ font-size: 17px; line-height: 1.85 }
+}
