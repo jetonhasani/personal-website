@@ -156,9 +156,27 @@ export default function Home() {
 
 
       {/* FOOTER */}
-      <footer className="footer">
-        © {new Date().getFullYear()} Jeton Hasani
+      <footer style={{ color: '#ccc', textAlign: 'center', padding: '10px' }}>
+        © {new Date().getFullYear()} Jeton Hasani — Hosted on{" "}
+        <a
+          href="https://www.netlify.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: '#4fd1c5', textDecoration: 'none' }}
+        >
+          Netlify
+        </a>{" "}
+        and uses the{" "}
+        <a
+          href="https://www.gatsbyjs.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: '#ff69b4', textDecoration: 'none' }}
+        >
+          Gatsby SSG Framework
+        </a>
       </footer>
+
     </main>
   );
 }
